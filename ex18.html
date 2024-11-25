@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let f = parseFloat(prompt("Digite a altura de Francisco em metros:"));
+let s = parseFloat(prompt("Digite a altura de Sara em metros:"));
+let a = 0;
+while (f <= s) {
+    f += 0.02;
+    s += 0.03;
+    a++;
+}
+alert(`Será necessário ${a} anos para Francisco ser maior que Sara.`);
+    </script>
+</body>
+</html>

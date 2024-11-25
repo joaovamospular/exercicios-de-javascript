@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function calcularValorFinal(valorProduto, codigoPagamento) {
+    let valorFinal;
+
+    switch (codigoPagamento) {
+        case 1:
+            valorFinal = valorProduto * 0.85;
+            break;
+        case 2: 
+            valorFinal = valorProduto * 0.90;
+            break;
+        case 3:
+            valorFinal = valorProduto;
+            break;
+        case 4: 
+            valorFinal = valorProduto * 1.10;
+            break;
+        default:
+            return "Código errado, tenta de novo!";
+    }
+
+    return `Preço final: R$ ${valorFinal.toFixed(2)}`;
+}
+
+const valorProduto = parseFloat(prompt("Qual o valor do produto?"));
+const codigoPagamento = parseInt(prompt("Escolha uma forma de pagamento:\n1 - Dinheiro ou Pix\n2 - Cartão de Débito\n3 - Cartão de Crédito\n4 - Parcelado"));
+
+alert(calcularValorFinal(valorProduto, codigoPagamento));
+    </script>
+</body>
+</html>

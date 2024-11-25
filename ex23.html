@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let valorHoraAula = parseFloat(prompt("Digite o tanto de horas aula:"));
+let numeroAulas = parseInt(prompt("Digite o número de aulas lecionadas no mês:"));
+let percentualINSS = parseFloat(prompt("Digite o percentual de desconto do INSS:"));
+
+let salarioBruto = valorHoraAula * numeroAulas; 
+let descontoINSS = (percentualINSS / 100) * salarioBruto; 
+let salarioLiquido = salarioBruto - descontoINSS; 
+
+alert(`Salário Bruto: R$ ${salarioBruto.toFixed(2)}\nDesconto INSS: R$ ${descontoINSS.toFixed(2)}\nSalário Líquido: R$ ${salarioLiquido.toFixed(2)}`);
+    </script>
+</body>
+</html>

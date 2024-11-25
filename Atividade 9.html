@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const peso = prompt('Digite seu peso')
+        const altura = prompt('Digite sua altura')
+        var calculo_IMC = peso/(altura * altura)
+        var condição = calculo_IMC 
+        if(calculo_IMC<18,5){
+            condição = ('Abaixo do Peso')
+        }
+        if(24,9>calculo_IMC>18,6){
+            condição = ('Peso Ideal, Parabés!')
+        }
+        if(29,9>calculo_IMC>25){
+            condição = ('Levemente acima do peso')
+        }
+        if(34,9>calculo_IMC>30){
+            condição = ('Obesidade grau 1')
+        }
+        if(39,9>calculo_IMC>35){
+            condição = ('Obesidade grau 2(Severa)')
+        }
+        if(calculo_IMC>=40){
+            condição = ('Obesidade grau 3(Mórbida)')
+        }
+        console.log(''+condição+'')
+        
+
+    </script>
+</body>
+</html>

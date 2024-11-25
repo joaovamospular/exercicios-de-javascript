@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 15</title>
+</head>
+<body>
+   
+    <script>
+        
+    let ano_n = parseInt(prompt("Ano nascimento:"));
+    let mes_n = parseInt(prompt("Mês nascimento:"));
+    let dia_n = parseInt(prompt("Dia nascimento:"));
+    let ano_a = parseInt(prompt("Ano atual:"));
+    let mes_a = parseInt(prompt("Mês atual:"));
+    let dia_a = parseInt(prompt("Dia atual:"));
+    
+    let anos_vividos = ano_a - ano_n;
+    let meses_vividos = mes_a - mes_n;
+    let dias_vividos = dia_a - dia_n;
+    
+    if (meses_vividos < 0) {
+        anos_vividos--;
+        meses_vividos += 12;
+    }
+    
+    if (dias_vividos < 0) {
+        meses_vividos--;
+        dias_vividos += 30;
+    }
+    
+    alert(anos_vividos + " anos " + meses_vividos + " meses " + dias_vividos + " dias");
+
+    </script>
+</body>
+</html>
